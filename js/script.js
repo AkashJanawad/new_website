@@ -6,6 +6,10 @@ function loadComponent(id, file) {
         });
 }
 
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
 loadComponent("navbar", "components/navbar.html");
 loadComponent("team", "components/team.html");
 loadComponent("projects", "components/projects.html");
