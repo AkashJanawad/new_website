@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /* NAVBAR */
 .navbar {
     background: #111;
@@ -5,6 +8,68 @@
     padding: 15px 30px;
     position: sticky;
     top: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Section spacing */
+.section {
+    padding: 60px 0;
+}
+
+/* Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Hero Fix */
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('../assets/images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .nav-container {
@@ -43,6 +108,13 @@
     text-align: center;
 }
 
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .project-grid {
     display: flex;
     gap: 20px;
@@ -57,6 +129,16 @@
     width: 280px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.team img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
 
 /* FOOTER */
 .footer {
@@ -74,13 +156,15 @@
     max-width: 250px;
 }
 
+.project-card {
+    overflow: hidden;
+}
+
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
 }
-.hero {
-    background: url('../assets/images/hero.jpg') center/cover no-repeat;
-}
+
 
 /* RESPONSIVE */
 @media(max-width: 768px) {
