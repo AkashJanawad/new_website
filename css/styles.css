@@ -78,6 +78,9 @@
     text-align: center;
     margin-top: 20px;
 }
+.hero {
+    background: url('../assets/images/hero.jpg') center/cover no-repeat;
+}
 
 /* RESPONSIVE */
 @media(max-width: 768px) {
